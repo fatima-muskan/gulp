@@ -1,0 +1,27 @@
+// _contact.scss
+.contact-section {
+  @include flex-center;
+  height: 70vh;
+  background-color: $background-color;
+  padding: 20px;
+
+  .contact-content {
+    max-width: 800px;
+    text-align: center;
+
+    .contact-info {
+      @include flex-center;
+      justify-content: space-around;
+      margin-top: 20px;
+
+      .contact-item {
+        text-align: center;
+
+        i {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

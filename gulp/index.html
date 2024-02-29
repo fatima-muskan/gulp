@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="scss/css/style.css"> <!-- Adjust the path to your actual CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>Pet Store</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="conact.html">Contact</a>
+        <a href="help.html">Help</a>
+    </nav>
+
+    <section class="card-container">
+
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/cato.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Whitey</div>
+                <div class="card-description">Persian Cat</div>
+                <div class="card-price">$10</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/doggy.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">White Dog</div>
+                <div class="card-description">Cute and Humble</div>
+                <div class="card-price">$15</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/parrot.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Parrots</div>
+                <div class="card-description">Chintu and Mintu</div>
+                <div class="card-price">$20</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/cato.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Browny</div>
+                <div class="card-description">Persian Cat</div>
+                <div class="card-price">$14</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/sparrow.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Sparrow</div>
+                <div class="card-description">Named as Mithu</div>
+                <div class="card-price">$5</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/bulbul.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Bulbul</div>
+                <div class="card-description">Named as Rangeen </div>
+                <div class="card-price">$10</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/puppy.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Puppy</div>
+                <div class="card-description">Black Frnd</div>
+                <div class="card-price">$10</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/cock.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Cock</div>
+                <div class="card-description">Named as Raja </div>
+                <div class="card-price">$9</div>
+            </div>
+        </div>
+        <div class="card" onclick="animateCard(this)">
+            <img src="images/Reddy.jpg" alt="Card Image">
+            <div class="card-content">
+                <div class="card-title">Bird</div>
+                <div class="card-description">Named as Reddish </div>
+                <div class="card-price">$3</div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        &copy; 2024 Pet Store. All rights reserved.
+    </footer>
+    <script>
+        function animateCard(card) {
+            card.classList.add("jump");
+            setTimeout(() => {
+                card.classList.remove("jump");
+            }, 300);
+        }
+    </script>
+
+</body>
+</html>

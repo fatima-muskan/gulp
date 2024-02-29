@@ -1,0 +1,55 @@
+// main.scss
+@import 'header';
+@import 'nav';
+@import 'main';
+@import 'about';
+@import 'card';
+@import 'contact';
+@import 'help';
+@import 'footer';
+
+// main.scss
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+  }
+}
+
+
+
+/* Resetting body and header styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+@media (min-width: 600px) {
+  body {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "main main"
+      "footer footer";
+  }
+}

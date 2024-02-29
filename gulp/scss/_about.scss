@@ -1,0 +1,15 @@
+// _about.scss
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  background-color: $background-color;
+  padding: 20px;
+
+  .about-content {
+    max-width: 800px;
+    text-align: center;
+  }
+}

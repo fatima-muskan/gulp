@@ -1,0 +1,16 @@
+// _help.scss
+.help-section {
+  @include flex-center;
+  height: 70vh;
+  background-color: $background-color;
+  padding: 20px;
+
+  .help-content {
+    max-width: 800px;
+    text-align: center;
+
+    .help-video {
+      margin-top: 20px;
+    }
+  }
+}
